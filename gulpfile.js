@@ -17,11 +17,13 @@ const outputs = [
     fileName: (fileName) => `${fileName}.png`,
     options: {},
   },
+  /*
   {
     format: "gif",
     fileName: (fileName) => `${fileName}.gif`,
     options: {},
   },
+  */
   {
     format: "webp",
     fileName: (fileName) => `${fileName}.webp`,
@@ -60,7 +62,6 @@ async function images() {
     .pipe(dest("dist"));
 
   compiled.pipe(zip.default("relucent-logo.zip")).pipe(dest("out"));
-
   compiled.pipe(tar.default("relucent-logo.tar")).pipe(dest("out"));
 }
 
