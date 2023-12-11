@@ -59,13 +59,9 @@ async function images() {
     )
     .pipe(dest("dist"));
 
-  compiled
-    .pipe(zip.default("relucent-logo.zip"))
-    .pipe(dest("out"))
+  compiled.pipe(zip.default("relucent-logo.zip")).pipe(dest("out"));
 
-  compiled
-    .pipe(tar.default("relucent-logo.tar"))
-    .pipe(dest("out"))
-};
+  compiled.pipe(tar.default("relucent-logo.tar")).pipe(dest("out"));
+}
 
 exports.default = images;
