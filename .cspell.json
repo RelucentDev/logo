@@ -13,5 +13,5 @@
   ],
   "words": ["Relucent", "relucentdev", "noncommercially", "domwebber"],
   "ignoreWords": [],
-  "ignorePaths": ["**/package*.json"]
+  "ignorePaths": ["**/package*.json", "**/dist/**/*", "**/out/**/*"]
 }
