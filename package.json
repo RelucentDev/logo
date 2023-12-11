@@ -14,12 +14,12 @@
   "license": "MIT",
   "main": "gulpfile.js",
   "directories": {
-    "dist": "dist",
+    "min": "dist/min",
+    "raw": "dist/raw",
     "src": "src"
   },
   "files": [
-    "dist",
-    "src"
+    "gulpfile.js"
   ],
   "keywords": [
     "relucent",

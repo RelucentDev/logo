@@ -57,8 +57,8 @@ exports.default = async function () {
         cb(null, file);
       }),
     )
-    .pipe(dest("dist/"))
+    .pipe(dest("dist/raw"))
     .pipe(imagemin.default())
     .pipe(rename({ suffix: ".min" }))
-    .pipe(dest("dist/"));
+    .pipe(dest("dist/min"));
 };
