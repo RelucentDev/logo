@@ -64,8 +64,7 @@
         "@semantic-release/github",
         {
           "assets": [
-            "dist/raw/**",
-            "dist/min/**"
+            "out/**"
           ]
         }
       ]
