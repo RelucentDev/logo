@@ -4,8 +4,10 @@
 
 Logos & icons for Relucent.
 
+[![@relucent.dev/logo version]][npmjs-package]
+
 [npmjs-package]: https://npmjs.com/@relucent.dev/logo
-[@relucent.dev/provenance version]: https://img.shields.io/npm/v/%40relucent.dev/logo
+[@relucent.dev/logo version]: https://img.shields.io/npm/v/%40relucent.dev/logo
 
 ## License
 
