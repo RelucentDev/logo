@@ -10,7 +10,6 @@
 const { src, dest } = require("gulp");
 const sharp = require("sharp");
 const through2 = require("through2");
-const rename = require("gulp-rename");
 
 const outputs = [
   {
@@ -59,6 +58,5 @@ exports.default = async function () {
     )
     .pipe(dest("dist/raw"))
     .pipe(imagemin.default())
-    .pipe(rename({ suffix: ".min" }))
     .pipe(dest("dist/min"));
 };
