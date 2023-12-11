@@ -30,13 +30,14 @@ const outputs = [
   // No JPEG due to lack of transparency
 ];
 
-exports.default = async function () {
+async function images() {
   const del = await import("del");
-  const imagemin = await import("gulp-imagemin");
+  const zip = await import("gulp-zip");
+  const tar = await import("gulp-tar");
 
   await del.deleteAsync(["dist/"]);
 
-  src("src/*.svg")
+  const compiled = src("src/*.svg")
     .pipe(
       through2.obj(async function (file, _, cb) {
         const compiledFilename = file.basename.replace(".svg", "");
@@ -56,7 +57,15 @@ exports.default = async function () {
         cb(null, file);
       }),
     )
-    .pipe(dest("dist/raw"))
-    .pipe(imagemin.default())
-    .pipe(dest("dist/min"));
+    .pipe(dest("dist"));
+
+  compiled
+    .pipe(zip.default("relucent-logo.zip"))
+    .pipe(dest("out"))
+
+  compiled
+    .pipe(tar.default("relucent-logo.tar"))
+    .pipe(dest("out"))
 };
+
+exports.default = images;
