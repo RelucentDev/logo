@@ -12,6 +12,15 @@
   },
   "author": "Relucent Ltd <hello@relucent.dev>",
   "license": "MIT",
+  "main": "gulpfile.js",
+  "directories": {
+    "dist": "dist",
+    "src": "src"
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
   "keywords": [
     "relucent",
     "logos"
