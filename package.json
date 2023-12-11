@@ -1,0 +1,57 @@
+{
+  "name": "@relucent.dev/logo",
+  "version": "0.0.0",
+  "description": "Logos & Icons for Relucent",
+  "repository": {
+    "type": "github",
+    "url": "https://github.com/RelucentDev/logo"
+  },
+  "homepage": "https://relucent.dev",
+  "bugs": {
+    "url": "https://github.com/RelucentDev/logo/issues"
+  },
+  "author": "Relucent Ltd <hello@relucent.dev>",
+  "license": "MIT",
+  "keywords": [
+    "relucent",
+    "logos"
+  ],
+  "scripts": {
+    "alex": "alex .",
+    "build": "npm-run-all gulp",
+    "cspell": "cspell .",
+    "gulp": "gulp",
+    "jscpd": "jscpd --config .jscpd.json",
+    "lint": "npm-run-all prettier alex cspell jscpd",
+    "lint-dev": "npm-run-all prettier-dev alex cspell jscpd",
+    "prettier": "prettier --check .",
+    "prettier-dev": "prettier --write ."
+  },
+  "devDependencies": {
+    "@relucent.dev/prettier-config": "^2.0.1",
+    "alex": "^11.0.1",
+    "archiver": "^6.0.1",
+    "cspell": "^8.1.3",
+    "del": "^7.1.0",
+    "fs-extra": "^11.2.0",
+    "gulp": "^4.0.2",
+    "gulp-cli": "^2.3.0",
+    "gulp-imagemin": "^9.0.0",
+    "gulp-rename": "^2.0.0",
+    "jscpd": "^3.5.10",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^3.1.1",
+    "semantic-release": "^22.0.10",
+    "sharp": "^0.33.0",
+    "through2": "^4.0.2"
+  },
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  },
+  "release": {
+    "branches": [
+      "main"
+    ]
+  }
+}
