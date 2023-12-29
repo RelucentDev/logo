@@ -17,4 +17,5 @@ MIT &copy; 2023 Relucent Ltd
 
 **Relucent Ltd**: <https://relucent.dev> <<hello@relucent.dev>>
 
-**Project Manager**: Dom Webber <https://domwebber.dev> <<dom.webber@hotmail.com>>
+**Project Manager**: Dom Webber <https://domwebber.dev>
+<<dom.webber@hotmail.com>>
