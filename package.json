@@ -28,9 +28,9 @@
     "gulp": "gulp",
     "jscpd": "jscpd --config .jscpd.json",
     "lint": "npm-run-all prettier alex cspell jscpd",
-    "lint-dev": "npm-run-all prettier-dev alex cspell jscpd",
+    "lint:dev": "npm-run-all prettier:dev alex cspell jscpd",
     "prettier": "prettier --check .",
-    "prettier-dev": "prettier --write ."
+    "prettier:dev": "prettier --write ."
   },
   "devDependencies": {
     "@relucent.dev/prettier-config": "^2.0.1",
