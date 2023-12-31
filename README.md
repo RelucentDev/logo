@@ -1,8 +1,8 @@
-# Relucent Logos & Icons
+# Relucent Logos & Branding
 
-![Relucent Logos & Icons Cover Image](cover.png)
+![Relucent Logos & Branding Cover Image](cover.png)
 
-Logos & icons for Relucent.
+Logos & Branding Information for Relucent.
 
 [![@relucent.dev/logo version]][npmjs-package]
 
